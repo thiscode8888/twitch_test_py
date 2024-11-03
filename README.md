@@ -1,6 +1,11 @@
 # Open Twitch Stream (GIF)
 ![Complete front-end Twitch open stream test](py_selenium_twitch.gif)
 
+## Run Locally
+1. Install [python >= 3.8](https://www.python.org/downloads/)
+2. Run `pip install -r requirements.txt`
+3. Run `pytest -s`
+
 # Structure Description
 ## Page Object Model
 * The code related to a particular website page is organised in a class of its own (known as a Page Object Model). This helps to make each and every page logic more descriptive and re-usable. A particular website pages' specific elements are listed in the relevant page object. Functions directly related to a page are also included in the page class.
@@ -15,3 +20,6 @@
 * Favouring explicit waits to reduce the test runtime as much as possible.
 * Promoting modular and reusable page objects, with the help of helper classes to further simplify pages and tests.
 * Each and every test is atomic and covers one specific feature.
+
+## Test Features
+* Auto-detect Chromedriver, avoiding manual chromedriver.exe download
