@@ -1,7 +1,6 @@
 import pytest
 from pages.home_page import HomePage
 from tests.config import config_driver
-import time
 from helpers.utils import Utils
 
 @pytest.fixture

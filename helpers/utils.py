@@ -30,7 +30,7 @@ class Utils:
             try:
                 WebDriverWait(self.browser,5).until(EC.element_to_be_clickable(locator)).click()
             except:
-                print("\tOptional click not performed")
+                print("\tOptional click not performed on: " + str(locator))
     
     def click_first_element_in_viewport(self, *locator):
             # click on the first stream video div that is fully in view port after scrolling
